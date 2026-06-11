@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="using:DevWinUI" xmlns:wind2="using:Microsoft.Graphics.Canvas.UI.Xaml">
+
+    <Style BasedOn="{StaticResource DefaultWin2DShimmerPanelStyle}" TargetType="local:Win2DShimmerPanel" />
+
+    <Style x:Key="DefaultWin2DShimmerPanelStyle" TargetType="local:Win2DShimmerPanel">
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        <Setter Property="VerticalContentAlignment" Value="Stretch" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:Win2DShimmerPanel">
+                    <Grid Background="{TemplateBinding Background}" CornerRadius="{TemplateBinding CornerRadius}">
+                        <ContentPresenter Margin="{TemplateBinding Padding}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" ContentTransitions="{TemplateBinding ContentTransitions}" />
+                        <Border CornerRadius="{TemplateBinding CornerRadius}" IsHitTestVisible="False">
+                            <wind2:CanvasControl x:Name="PART_Canvas" />
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

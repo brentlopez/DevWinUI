@@ -502,6 +502,13 @@
           "ImagePath": "ms-appx:///Assets/Fluent/SwipeControl.png"
         },
         {
+          "UniqueId": "DevWinUIGallery.Views.ShimmerPanelPage",
+          "Title": "Shimmer Panel",
+          "Subtitle": "Shimmer over any content (image, shapes, layout)",
+          "IsNew": true,
+          "ImagePath": "ms-appx:///Assets/Fluent/SwipeControl.png"
+        },
+        {
           "UniqueId": "DevWinUIGallery.Views.ModalWindowPage",
           "Title": "Modal Window",
           "Subtitle": "A window that captures user interaction exclusively until it is closed, typically used for dialogs, alerts, or important prompts.",
@@ -903,6 +910,13 @@
       "Title": "Features (Win2D)",
       "ImagePath": "ms-appx:///Assets/Fluent/Canvas.png",
       "Items": [
+        {
+          "UniqueId": "DevWinUIGallery.Views.Win2DShimmerPanelPage",
+          "Title": "Shimmer Panel (Win2D)",
+          "Subtitle": "Win2D-rendered shimmer with the same parameters as Shimmer Panel",
+          "IsNew": true,
+          "ImagePath": "ms-appx:///Assets/Fluent/SwipeControl.png"
+        },
         {
           "UniqueId": "DevWinUIGallery.Views.ShaderBackgroundPage",
           "Title": "Shader Background",
